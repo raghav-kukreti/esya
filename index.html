@@ -12,7 +12,7 @@
 
 <body>
     <section class="hero">
-      	<div class="logo"></div>
+        <div class="logo"></div>
         <div class="left">
             <div class="centered">
                 <h1 class="animated fadeInDown">The banking application</h1>
@@ -52,7 +52,7 @@
             Simplex is a simple, effecient and intelligent application which enables the user to better manage and keep track of his or her finances.
         </p>
         <p class="lead">
-           With the advent of plastic money, it's gotten easier to spend it & harder to keep track of it in a tangible manner. Simplex provides you with a platform to plan your expenses while also keeping a track of where your income is being channelised.
+            With the advent of plastic money, it's gotten easier to spend it & harder to keep track of it in a tangible manner. Simplex provides you with a platform to plan your expenses while also keeping a track of where your income is being channelised.
         </p>
         <br>
         <br>
@@ -120,36 +120,35 @@
         </div>
     </section>
     <footer>
-    	
     </footer>
-
     <script>
-	$(window).scroll(function() {
-		$('.gradient').each(function(){
-		var imagePos = $(this).offset().top;
+    $(window).scroll(function() {
+        $('.gradient').each(function() {
+            var imagePos = $(this).offset().top;
 
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("animated fadeIn");
-			}
-		});
-	});
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow + 400) {
+                $(this).addClass("animated fadeIn");
+            }
+        });
+    });
+    </script>
+    <script>
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') ||
+            location.hostname == this.hostname) {
 
-	$('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-        || location.hostname == this.hostname) {
-
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-           if (target.length) {
-             $('html,body').animate({
-                 scrollTop: target.offset().top
-            }, 1000);
-            return false;
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
         }
-    }
-});
-</script>
+    });
+    </script>
 </body>
 
 </html>
