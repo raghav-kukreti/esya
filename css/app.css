@@ -44,7 +44,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: Lyon;
+  font-family: Poppins;
   font-weight: normal; }
 
 .right {
@@ -80,7 +80,7 @@ h4 {
       color: #fff; }
       .left .centered h1 span {
         border-bottom: 3px solid rgba(255, 255, 255, 0.155);
-        font-family: LyonItalic; }
+        font-family: Poppins; }
     .left .centered p.lead {
       font-family: Apercu;
       margin-bottom: 5px;
@@ -233,10 +233,11 @@ a {
 .about {
   height: 100vh;
   width: 100%;
-  padding: 12% 30%; }
+  padding: 7% 30%; }
   .about h1 {
-    font-family: LyonItalic;
+    font-family: Poppins;
     color: #08294B;
+    line-height: 1.2;
     font-size: 2.88rem;
     margin-bottom: 20px; }
     .about h1 span {
@@ -300,7 +301,7 @@ a {
       color: #fff; }
       .left_features .centered h1 span {
         border-bottom: 3px solid rgba(255, 255, 255, 0.355);
-        font-family: LyonItalic; }
+        font-family: Poppins; }
     .left_features .centered p.lead {
       font-family: Apercu;
       margin-bottom: 5px;
@@ -339,7 +340,7 @@ li {
       color: #fff; }
       .right_2 .centered h1 span {
         border-bottom: 3px solid rgba(255, 255, 255, 0.155);
-        font-family: LyonItalic; }
+        font-family: Poppins; }
     .right_2 .centered p.lead {
       font-family: Apercu;
       margin-bottom: 5px;
