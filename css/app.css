@@ -444,3 +444,13 @@ li {
     opacity: 1; }
   100% {
     opacity: 0; } }
+
+.logo {
+  height: 80px;
+  width: 80px;
+  margin: 30px;
+  right: 0;
+  opacity: 0.8;
+  position: fixed;
+  background: url(logo.png) center center no-repeat;
+  background-size: cover; }

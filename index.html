@@ -12,6 +12,7 @@
 
 <body>
     <section class="hero">
+      	<div class="logo"></div>
         <div class="left">
             <div class="centered">
                 <h1 class="animated fadeInDown">The banking application</h1>
@@ -26,8 +27,8 @@
                 <br>
                 <br>
                 <p class="lead animated fadeIn">
-                    <a href="#0" class="button white bump-right">Check it out</a>
-                    <a href="#0" class="button">read on</a>
+                    <a href="#simple" class="button white bump-right">Check it out</a>
+                    <a href="#quote" class="button">read on</a>
                 </p>
             </div>
         </div>
@@ -65,7 +66,7 @@
   Loan applications made simple
   Income channelisation</section> -->
     <section class="hero">
-        <div class="left_features">
+        <div class="left_features" id="simple">
             <div class="centered">
                 <h1>A simple and intuitive user interface.</h1>
                 <ul>
@@ -73,7 +74,7 @@
                     <li><span>&mdash;</span>Forget clicking endless links</li>
                     <li><span>&mdash;</span>What breadcrumbs?</li>
                     <li><span>&mdash;</span>Responsive and adaptive UI</li>
-                    <li><span>&mdash;</span>amet</li>
+                    <!-- <li><span>&mdash;</span>amet</li> -->
                 </ul>
             </div>
         </div>
@@ -133,6 +134,21 @@
 			}
 		});
 	});
+
+	$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
 </script>
 </body>
 
