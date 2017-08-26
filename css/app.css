@@ -208,16 +208,26 @@ a {
   animation-name: fadeInUp; }
 
 .cite {
-  color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.4);
   margin-left: 60%; }
 
 .image {
   position: relative;
   top: 50px;
   left: 5%;
-  background: url(iphone.png) center center no-repeat;
   height: 600px;
-  width: 600px;
+  width: 600px; }
+
+.uno {
+  background: url(send.png) center center no-repeat;
+  background-size: cover; }
+
+.dos {
+  background: url(loan.png) center center no-repeat;
+  background-size: cover; }
+
+.tres {
+  background: url(hogaya.png) center center no-repeat;
   background-size: cover; }
 
 .about {
@@ -357,19 +367,19 @@ li {
   height: 100%; }
 
 .slide1 {
-  background: url(iphone.png) no-repeat center;
+  background: url(iphone4.png) no-repeat center;
   background-size: cover;
   animation: fade 8s infinite;
   -webkit-animation: fade 8s infinite; }
 
 .slide2 {
-  background: url(bg1.jpg) no-repeat center;
+  background: url(boom.png) no-repeat center;
   background-size: cover;
   animation: fade2 8s infinite;
   -webkit-animation: fade2 8s infinite; }
 
 .slide3 {
-  background: url(divider.jpg) no-repeat center;
+  background: url(mad.png) no-repeat center;
   background-size: cover;
   animation: fade3 8s infinite;
   -webkit-animation: fade3 8s infinite; }

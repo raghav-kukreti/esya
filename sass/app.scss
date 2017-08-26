@@ -166,7 +166,7 @@ a {
 .gradient {
     background: #5f2c82;
     font-family: Apercu;
-    opacity: 0; 
+    opacity: 0;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);
     /* Chrome 10-25, Safari 5.1-6 */
@@ -175,48 +175,64 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -20%, 0);
-  }
 
-  to {
-    opacity: 1;
-    transform: none;
-  }
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .fadeInDown {
-  animation-name: fadeInDown;
+    animation-name: fadeInDown;
 }
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 20%, 0);
-  }
 
-  to {
-    opacity: 1;
-    transform: none;
-  }
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 20%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .fadeInUp {
-  animation-name: fadeInUp;
+    animation-name: fadeInUp;
 }
+
 .cite {
-    color: rgba(#fff, 0.1);
+    color: rgba(#fff, 0.4);
     margin-left: 60%;
 }
 
 .image {
     position: relative;
     top: 50px;
-    left: 5%;
-    background: url(iphone.png) center center no-repeat;
+    left: 5%; // background: url(iphone.png) center center no-repeat;
     height: 600px;
     width: 600px;
+}
+
+.uno {
+    background: url(send.png) center center no-repeat;
+    background-size: cover;
+}
+
+.dos {
+    background: url(loan.png) center center no-repeat;
+    background-size: cover;
+}
+
+.tres {
+    background: url(hogaya.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -257,23 +273,26 @@ a {
 .deux {
     background: url(div2.jpg) center center no-repeat fixed;
 }
-.animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
 
-  to {
-    opacity: 1;
-  }
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .fadeIn {
-  animation-name: fadeIn;
+    animation-name: fadeIn;
 }
+
 .left_features {
     background: #2ecc71;
     float: left;
@@ -355,7 +374,11 @@ li {
         }
     }
 }
-.troix {background: url(hipster.jpg) center center no-repeat fixed !important;}
+
+.troix {
+    background: url(hipster.jpg) center center no-repeat fixed !important;
+}
+
 .slider {
     max-width: 500px;
     height: 500px;
@@ -375,21 +398,21 @@ li {
 }
 
 .slide1 {
-    background: url(iphone.png)no-repeat center;
+    background: url(iphone4.png) no-repeat center;
     background-size: cover;
     animation: fade 8s infinite;
     -webkit-animation: fade 8s infinite;
 }
 
 .slide2 {
-    background: url(bg1.jpg)no-repeat center;
+    background: url(boom.png) no-repeat center;
     background-size: cover;
     animation: fade2 8s infinite;
     -webkit-animation: fade2 8s infinite;
 }
 
 .slide3 {
-    background: url(divider.jpg)no-repeat center;
+    background: url(mad.png) no-repeat center;
     background-size: cover;
     animation: fade3 8s infinite;
     -webkit-animation: fade3 8s infinite;
@@ -439,4 +462,3 @@ li {
         opacity: 0
     }
 }
-
